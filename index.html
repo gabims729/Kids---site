@@ -5,36 +5,58 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0756a5">
-<title>KIDS | Aluguéis, Decorações e Espaço de Festas</title>
+<meta name="description" content="Kids Aluguéis de Brinquedos, Decoração e Espaço de Festas em Teófilo Otoni-MG. Faça seu orçamento!">
+<title>KIDS | Sua festa começa aqui!</title>
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{font-family:Arial,sans-serif;color:#18304b;background:#fff;line-height:1.6}
-header{background:#0756a5;color:white;padding:22px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
-.logo{font-size:34px;font-weight:900;color:#ffd629}
-.logo span{display:block;font-size:11px;color:white;letter-spacing:2px}
-nav{display:flex;gap:18px;flex-wrap:wrap}
+header{background:#0756a5;color:white;padding:16px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:35px;font-weight:900;color:#ffd629;line-height:1.1}
+.logo span{display:block;font-size:10px;color:white;letter-spacing:2px}
+nav{display:flex;gap:22px;flex-wrap:wrap}
 nav a{color:white;text-decoration:none;font-weight:bold;font-size:14px}
-.hero{padding:85px 7%;text-align:center;background:linear-gradient(135deg,#0756a5,#1287d6);color:white}
-.hero h1{font-size:clamp(32px,6vw,52px);line-height:1.15;margin-bottom:18px}
-.hero p{font-size:18px;max-width:650px;margin:0 auto 28px}
-.btn{display:inline-block;background:#ffd629;color:#17365c;padding:15px 28px;border-radius:9px;text-decoration:none;font-weight:900}
-section{padding:65px 7%;text-align:center}
-section h2{font-size:30px;color:#0756a5;margin-bottom:12px}
-.intro{max-width:650px;margin:0 auto 35px;color:#66788a}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-top:30px}
-.card{padding:30px 22px;border:1px solid #e4eaf0;border-radius:16px;box-shadow:0 5px 20px #102f5010}
-.card .symbol{font-size:48px;margin-bottom:15px}
-.card h3{color:#0756a5;margin-bottom:12px;font-size:21px}
-.card p{color:#637386;margin-bottom:22px}
+nav a:hover{color:#ffd629}
+.hero{padding:85px 7%;background:linear-gradient(125deg,#063c78,#087fc5);color:white;display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:35px}
+.hero h1{font-size:clamp(36px,5vw,57px);line-height:1.1;margin-bottom:20px}
+.hero p{font-size:18px;margin-bottom:30px;max-width:580px}
+.hero-art{background:#ffffff18;border:1px solid #ffffff35;border-radius:25px;padding:35px;text-align:center}
+.hero-art .emoji{font-size:100px}
+.hero-art strong{display:block;color:#ffd629;font-size:24px;margin-top:10px}
+.btn{display:inline-block;background:#ffd629;color:#17365c;padding:15px 27px;border-radius:9px;text-decoration:none;font-weight:900;transition:.2s}
+.btn:hover{transform:translateY(-3px);background:#ffe46d}
+section{padding:70px 7%;text-align:center}
+section h2{font-size:clamp(27px,4vw,36px);color:#0756a5;margin-bottom:12px}
+.intro{max-width:680px;margin:0 auto 35px;color:#66788a;font-size:16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:35px}
+.card{padding:30px 22px;border:1px solid #e3eaf2;border-radius:18px;box-shadow:0 7px 25px #102f5010;background:white;transition:.2s}
+.card:hover{transform:translateY(-5px);box-shadow:0 12px 30px #102f5020}
+.symbol{font-size:60px;margin-bottom:15px}
+.card h3{color:#0756a5;margin-bottom:10px;font-size:21px}
+.card p{color:#637386;margin-bottom:22px;font-size:15px}
 .card a{color:#0756a5;font-weight:bold;text-decoration:none}
 .highlight{background:#f1f7fd}
-.contact{background:#0756a5;color:white}
+.section-label{color:#e2a900;font-weight:900;letter-spacing:2px;font-size:12px}
+.contact{background:linear-gradient(120deg,#0756a5,#087fc5);color:white}
 .contact h2{color:#ffd629}
 .contact p{margin:12px auto 25px;max-width:600px}
-footer{background:#073e78;color:white;text-align:center;padding:25px;font-size:14px}
-@media(max-width:600px){header{justify-content:center;text-align:center}nav{justify-content:center}.hero{padding:65px 6%}section{padding:48px 6%}}
+.contact .btn{margin-top:8px}
+footer{background:#073e78;color:white;text-align:center;padding:30px 15px;font-size:14px}
+footer strong{font-size:25px;color:#ffd629}
+.whatsapp{position:fixed;right:18px;bottom:18px;background:#20b85a;color:white;text-decoration:none;font-weight:bold;padding:14px 19px;border-radius:50px;box-shadow:0 5px 18px #0003;z-index:10}
+@media(max-width:700px){
+header{justify-content:center;text-align:center}
+nav{justify-content:center;gap:15px}
+.hero{grid-template-columns:1fr;text-align:center;padding:60px 6%}
+.hero p{margin-left:auto;margin-right:auto}
+.hero-art{padding:20px}
+.hero-art .emoji{font-size:75px}
+section{padding:55px 6%}
+}
 </style>
 </head>
+
 <body>
 <header>
 <div class="logo">KIDS<span>DIVERSÃO • DECORAÇÃO • FESTAS</span></div>
@@ -42,56 +64,103 @@ footer{background:#073e78;color:white;text-align:center;padding:25px;font-size:1
 <a href="#brinquedos">Brinquedos</a>
 <a href="#decoracoes">Decorações</a>
 <a href="#casa">Casa Kids</a>
+<a href="#contato">Contato</a>
 </nav>
 </header>
 
 <main>
 <div class="hero">
-<h1>A diversão da sua festa começa aqui!</h1>
-<p>Transformamos momentos especiais em grandes lembranças. Conheça nossas soluções para sua comemoração.</p>
-<a class="btn" href="#contato">FAÇA SEU ORÇAMENTO</a>
+<div>
+<div class="section-label">KIDS • TEÓFILO OTONI</div>
+<h1>A festa dos seus sonhos começa aqui!</h1>
+<p>Brinquedos, decorações e espaço de festas. Tudo para transformar momentos especiais em lembranças inesquecíveis.</p>
+<a class="btn" href="#contato">FAÇA SEU ORÇAMENTO →</a>
+</div>
+<div class="hero-art">
+<div class="emoji">🎉🏰🎈</div>
+<strong>Seu momento. Nossa diversão!</strong>
+<p>Especialistas em tornar sua comemoração ainda mais especial.</p>
+</div>
 </div>
 
 <section id="brinquedos">
+<div class="section-label">DIVERSÃO GARANTIDA</div>
 <h2>Kids Aluguéis de Brinquedos</h2>
-<p class="intro">Diversão garantida para a criançada! Brinquedos para tornar sua festa ainda mais especial.</p>
+<p class="intro">A alegria da criançada é nossa prioridade! Escolha os brinquedos ideais para seu evento.</p>
 <div class="cards">
-<div class="card"><div class="symbol">🏰</div><h3>Pula-pula</h3><p>Diversão para todas as crianças.</p><a href="#contato">Consultar disponibilidade →</a></div>
-<div class="card"><div class="symbol">🎈</div><h3>Piscina de bolinhas</h3><p>Mais alegria e diversão para sua festa.</p><a href="#contato">Consultar disponibilidade →</a></div>
-<div class="card"><div class="symbol">🎠</div><h3>Brinquedos infantis</h3><p>Opções para completar seu evento.</p><a href="#contato">Consultar disponibilidade →</a></div>
+<div class="card">
+<div class="symbol">🏰</div>
+<h3>Pula-pula</h3>
+<p>Modelos para diferentes idades e espaços.</p>
+<a href="https://wa.me/5533988818096?text=Olá!%20Quero%20consultar%20os%20pula-pulas.">Consultar valores →</a>
+</div>
+<div class="card">
+<div class="symbol">🎈</div>
+<h3>Piscina de bolinhas</h3>
+<p>Mais alegria e diversão para os pequenos.</p>
+<a href="https://wa.me/5533988818096?text=Olá!%20Quero%20consultar%20a%20piscina%20de%20bolinhas.">Consultar valores →</a>
+</div>
+<div class="card">
+<div class="symbol">🎠</div>
+<h3>Brinquedos infantis</h3>
+<p>Opções para completar sua comemoração.</p>
+<a href="https://wa.me/5533988818096?text=Olá!%20Quero%20conhecer%20os%20brinquedos%20infantis.">Consultar valores →</a>
+</div>
 </div>
 </section>
 
 <section id="decoracoes" class="highlight">
+<div class="section-label">CADA DETALHE IMPORTA</div>
 <h2>Kids Decorações</h2>
-<p class="intro">Criamos ambientes especiais para celebrar os melhores momentos da sua vida.</p>
+<p class="intro">Criamos ambientes especiais, com carinho e criatividade, para celebrar os melhores momentos da sua vida.</p>
 <div class="cards">
-<div class="card"><div class="symbol">🎂</div><h3>Festas personalizadas</h3><p>Decorações pensadas para cada comemoração.</p><a href="#contato">Solicitar orçamento →</a></div>
-<div class="card"><div class="symbol">🎉</div><h3>Momentos especiais</h3><p>Detalhes que fazem a diferença na sua festa.</p><a href="#contato">Solicitar orçamento →</a></div>
+<div class="card">
+<div class="symbol">🎂</div>
+<h3>Festas personalizadas</h3>
+<p>Decorações planejadas para sua comemoração.</p>
+<a href="https://wa.me/5533988818096?text=Olá!%20Quero%20um%20orçamento%20de%20decoração.">Solicitar orçamento →</a>
+</div>
+<div class="card">
+<div class="symbol">🎊</div>
+<h3>Momentos especiais</h3>
+<p>Detalhes que fazem toda a diferença.</p>
+<a href="https://wa.me/5533988818096?text=Olá!%20Quero%20conhecer%20as%20decorações.">Conhecer serviços →</a>
+</div>
 </div>
 </section>
 
 <section id="casa">
+<div class="section-label">SEU EVENTO MERECE UM LUGAR ESPECIAL</div>
 <h2>Casa Kids – Espaço de Festas</h2>
 <p class="intro">Um espaço preparado para receber sua família e seus convidados com conforto e praticidade.</p>
 <div class="cards">
-<div class="card"><div class="symbol">🏡</div><h3>Seu evento na Casa Kids</h3><p>Conheça nosso espaço e consulte as condições de locação.</p><a href="#contato">Consultar datas →</a></div>
+<div class="card">
+<div class="symbol">🏡</div>
+<h3>Seu evento na Casa Kids</h3>
+<p>Conheça nosso espaço e consulte as condições de locação.</p>
+<a href="https://wa.me/5533988818096?text=Olá!%20Quero%20conhecer%20a%20Casa%20Kids%20e%20consultar%20datas.">Consultar datas →</a>
+</div>
 </div>
 </section>
 
 <section id="contato" class="contact">
+<div class="section-label">ESTAMOS ESPERANDO POR VOCÊ</div>
 <h2>Vamos realizar sua festa?</h2>
-<p>Entre em contato com nossa equipe e solicite seu orçamento.</p>
-<a class="btn" href="https://wa.me/5533988818096?text=Olá!%20Quero%20fazer%20um%20orçamento%20com%20a%20Kids." target="_blank">FALAR PELO WHATSAPP</a>
+<p>Fale com nossa equipe e receba um atendimento especial para planejar seu evento.</p>
+<a class="btn" href="https://wa.me/5533988818096?text=Olá!%20Quero%20fazer%20um%20orçamento%20com%20a%20Kids." target="_blank" rel="noopener">FALAR PELO WHATSAPP</a>
 </section>
 </main>
 
 <footer>
 <strong>KIDS</strong><br>
 Aluguéis de Brinquedos, Decoração e Espaço de Festas<br>
+Rua Engenheiro Lindenberg, 165 – Centro<br>
 Teófilo Otoni – MG<br><br>
+WhatsApp: (33) 98881-8096<br>
 © 2026 – Todos os direitos reservados.
 </footer>
+
+<a class="whatsapp" href="https://wa.me/5533988818096?text=Olá!%20Vim%20pelo%20site%20da%20Kids." target="_blank" rel="noopener">WhatsApp</a>
 </body>
   </html>
   
