@@ -4,146 +4,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kids - Diversão e Festas</title>
-
+<meta name="theme-color" content="#0756a5">
+<title>KIDS | Aluguéis, Decorações e Espaço de Festas</title>
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  color: #18345c;
-  background: #f5f8ff;
-}
-
-header {
-  background: #0755ad;
-  color: white;
-  padding: 25px 15px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 30px;
-}
-
-nav {
-  padding: 15px;
-  text-align: center;
-  background: white;
-}
-
-nav a {
-  color: #0755ad;
-  text-decoration: none;
-  margin: 8px;
-  font-weight: bold;
-}
-
-.hero {
-  padding: 65px 20px;
-  text-align: center;
-  background: #ffcf32;
-}
-
-.hero h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-.botao {
-  display: inline-block;
-  background: #0755ad;
-  color: white;
-  padding: 15px 25px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-section {
-  padding: 35px 20px;
-  text-align: center;
-}
-
-.card {
-  background: white;
-  padding: 25px;
-  margin: 18px auto;
-  max-width: 450px;
-  border-radius: 12px;
-  box-shadow: 0 3px 12px #00000015;
-}
-
-.card h3 {
-  color: #0755ad;
-  margin-bottom: 12px;
-}
-
-footer {
-  background: #0755ad;
-  color: white;
-  padding: 25px;
-  text-align: center;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;color:#18304b;background:#fff;line-height:1.6}
+header{background:#0756a5;color:white;padding:22px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:34px;font-weight:900;color:#ffd629}
+.logo span{display:block;font-size:11px;color:white;letter-spacing:2px}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-weight:bold;font-size:14px}
+.hero{padding:85px 7%;text-align:center;background:linear-gradient(135deg,#0756a5,#1287d6);color:white}
+.hero h1{font-size:clamp(32px,6vw,52px);line-height:1.15;margin-bottom:18px}
+.hero p{font-size:18px;max-width:650px;margin:0 auto 28px}
+.btn{display:inline-block;background:#ffd629;color:#17365c;padding:15px 28px;border-radius:9px;text-decoration:none;font-weight:900}
+section{padding:65px 7%;text-align:center}
+section h2{font-size:30px;color:#0756a5;margin-bottom:12px}
+.intro{max-width:650px;margin:0 auto 35px;color:#66788a}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-top:30px}
+.card{padding:30px 22px;border:1px solid #e4eaf0;border-radius:16px;box-shadow:0 5px 20px #102f5010}
+.card .symbol{font-size:48px;margin-bottom:15px}
+.card h3{color:#0756a5;margin-bottom:12px;font-size:21px}
+.card p{color:#637386;margin-bottom:22px}
+.card a{color:#0756a5;font-weight:bold;text-decoration:none}
+.highlight{background:#f1f7fd}
+.contact{background:#0756a5;color:white}
+.contact h2{color:#ffd629}
+.contact p{margin:12px auto 25px;max-width:600px}
+footer{background:#073e78;color:white;text-align:center;padding:25px;font-size:14px}
+@media(max-width:600px){header{justify-content:center;text-align:center}nav{justify-content:center}.hero{padding:65px 6%}section{padding:48px 6%}}
 </style>
 </head>
-
 <body>
-
 <header>
-  <h1>KIDS</h1>
-  <p>Aluguéis de Brinquedos, Decoração e Espaço de Festas</p>
+<div class="logo">KIDS<span>DIVERSÃO • DECORAÇÃO • FESTAS</span></div>
+<nav>
+<a href="#brinquedos">Brinquedos</a>
+<a href="#decoracoes">Decorações</a>
+<a href="#casa">Casa Kids</a>
+</nav>
 </header>
 
-<nav>
-  <a href="#brinquedos">Brinquedos</a>
-  <a href="#decoracoes">Decorações</a>
-  <a href="#espaco">Casa Kids</a>
-</nav>
-
+<main>
 <div class="hero">
-  <h2>A diversão da sua festa começa aqui!</h2>
-  <p>Transformamos momentos especiais em grandes lembranças.</p>
-  <a class="botao" href="https://wa.me/5533988818096">
-    FAÇA SEU ORÇAMENTO
-  </a>
+<h1>A diversão da sua festa começa aqui!</h1>
+<p>Transformamos momentos especiais em grandes lembranças. Conheça nossas soluções para sua comemoração.</p>
+<a class="btn" href="#contato">FAÇA SEU ORÇAMENTO</a>
 </div>
 
 <section id="brinquedos">
-  <div class="card">
-    <h3>Kids Aluguéis de Brinquedos</h3>
-    <p>Brinquedos para divertir a criançada e tornar sua festa inesquecível.</p>
-  </div>
+<h2>Kids Aluguéis de Brinquedos</h2>
+<p class="intro">Diversão garantida para a criançada! Brinquedos para tornar sua festa ainda mais especial.</p>
+<div class="cards">
+<div class="card"><div class="symbol">🏰</div><h3>Pula-pula</h3><p>Diversão para todas as crianças.</p><a href="#contato">Consultar disponibilidade →</a></div>
+<div class="card"><div class="symbol">🎈</div><h3>Piscina de bolinhas</h3><p>Mais alegria e diversão para sua festa.</p><a href="#contato">Consultar disponibilidade →</a></div>
+<div class="card"><div class="symbol">🎠</div><h3>Brinquedos infantis</h3><p>Opções para completar seu evento.</p><a href="#contato">Consultar disponibilidade →</a></div>
+</div>
 </section>
 
-<section id="decoracoes">
-  <div class="card">
-    <h3>Kids Decorações</h3>
-    <p>Decorações especiais para celebrar os melhores momentos.</p>
-  </div>
+<section id="decoracoes" class="highlight">
+<h2>Kids Decorações</h2>
+<p class="intro">Criamos ambientes especiais para celebrar os melhores momentos da sua vida.</p>
+<div class="cards">
+<div class="card"><div class="symbol">🎂</div><h3>Festas personalizadas</h3><p>Decorações pensadas para cada comemoração.</p><a href="#contato">Solicitar orçamento →</a></div>
+<div class="card"><div class="symbol">🎉</div><h3>Momentos especiais</h3><p>Detalhes que fazem a diferença na sua festa.</p><a href="#contato">Solicitar orçamento →</a></div>
+</div>
 </section>
 
-<section id="espaco">
-  <div class="card">
-    <h3>Casa Kids – Espaço de Festas</h3>
-    <p>Um espaço preparado para receber sua família e seus convidados.</p>
-  </div>
+<section id="casa">
+<h2>Casa Kids – Espaço de Festas</h2>
+<p class="intro">Um espaço preparado para receber sua família e seus convidados com conforto e praticidade.</p>
+<div class="cards">
+<div class="card"><div class="symbol">🏡</div><h3>Seu evento na Casa Kids</h3><p>Conheça nosso espaço e consulte as condições de locação.</p><a href="#contato">Consultar datas →</a></div>
+</div>
 </section>
+
+<section id="contato" class="contact">
+<h2>Vamos realizar sua festa?</h2>
+<p>Entre em contato com nossa equipe e solicite seu orçamento.</p>
+<a class="btn" href="https://wa.me/5533988818096?text=Olá!%20Quero%20fazer%20um%20orçamento%20com%20a%20Kids." target="_blank">FALAR PELO WHATSAPP</a>
+</section>
+</main>
 
 <footer>
-  <p>KIDS - Teófilo Otoni - MG</p>
-  <p>© 2026 - Todos os direitos reservados.</p>
+<strong>KIDS</strong><br>
+Aluguéis de Brinquedos, Decoração e Espaço de Festas<br>
+Teófilo Otoni – MG<br><br>
+© 2026 – Todos os direitos reservados.
 </footer>
-
 </body>
-</html>
+  </html>
+  
